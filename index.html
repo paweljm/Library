@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <h1 class="display-1 text-center">Library</h1>
+    <div class="container">
+        <form class="entry-form container">
+            <label for="book-name">Book Title:
+                <input type="text" name="book-name" id="book-name"class="form-control" required>
+            </label>
+            <label for="author-name">Author:
+                <input type="text" name="author-name" id="author-name" class="form-control" required>
+            </label>
+            <label for="pages-num">Pages:
+                <input type="number" name="pages-num" id="pages-num" class="form-control" required>
+            </label>
+            <label for="read-check">Read?
+                <input type="checkbox" name="read-check" id="read-check">
+            </label>
+            <button class="btn btn-primary" id="add-button" type="button">Add</button>
+        </form>
+        <div class="container">
+            <table class="table table-striped">
+                <thead>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Read?</th>
+                    <th scope="col"> </th>
+                </thead>
+                <tbody>
+                    <!--<tr>
+                        <td>Animal Farm</td>
+                        <td>George Orwell</td>
+                        <td>200</td>
+                        <td><button class="btn btn-outline-success">yes</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr>
+                    <tr>
+                        <td>Animal Farm</td>
+                        <td>George Orwell</td>
+                        <td>200</td>
+                        <td><button class="btn btn-outline-danger">no</button></td>
+                        <td><button class="btn btn-danger">Remove</button></td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
